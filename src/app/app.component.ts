@@ -51,6 +51,19 @@ export class AppComponent implements OnInit {
     // End calculation for middleValue
     middleValue = middleValue * 100;
 
+    // Set limitation for minValue for lowest iteratuions
+    if (localStorage.getItem('numberOfPxStorageValue')! == '16') {
+      minValue = 16;
+    } else if (localStorage.getItem('numberOfPxStorageValue')! == '14') {
+      minValue = 14;
+    } else if (localStorage.getItem('numberOfPxStorageValue')! == '12') {
+      minValue = 10;
+    } else if (localStorage.getItem('numberOfPxStorageValue')! == '11') {
+      minValue = 9;
+    } else if (localStorage.getItem('numberOfPxStorageValue')! == '10') {
+      minValue = 8;
+    }
+
     // Create CSS `clamp()` for calculations
     this.clampForPhones = `clamp(min(${minValue.toFixed(
       2
