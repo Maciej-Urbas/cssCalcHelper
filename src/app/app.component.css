@@ -10,10 +10,14 @@
   width: clamp(min(40px), 5vw, max(96px));
   height: clamp(min(40px), 5vw, max(96px));
 
-  margin: 4vw 0vw 0vw 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 4vw 0vw 0vw 14vw;
 
   color: #fff;
-
+  font-size: clamp(min(18px), 2vw, max(40px));
   text-align: center;
 
   background-color: #58677b;
@@ -32,7 +36,7 @@
   align-items: center;
   /* gap: 4vw; */
 
-  margin: 4vw 0vw 0vw 6vw;
+  margin: 4vw 0vw 0vw 20vw;
 }
 
 button {

@@ -8,11 +8,18 @@
 
   <div class="pairOfResult">
     <p class="resultForPhonesResolutions">clamp() for Phones</p>
-    <button (click)="copyMessage('')" class="copyForPhonesButton">COPY</button>
+    <button
+      (click)="copyMessageForPhonesResolution()"
+      class="copyForPhonesButton"
+    >
+      COPY
+    </button>
   </div>
 
   <div class="pairOfResult">
     <p class="resultForPcResolutions">clamp() for PC</p>
-    <button class="copyForPcButton">COPY</button>
+    <button (click)="copyMessageForPcsResolution()" class="copyForPcButton">
+      COPY
+    </button>
   </div>
 </div>
